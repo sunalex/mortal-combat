@@ -1,0 +1,160 @@
+@import "bootstrap.less";
+
+.alert {
+  position: relative;
+  width: 100%;
+  top: -30px;
+  font-size: 24px;
+  border-top: none;
+  z-index: 9999;
+  font-weight: 600;
+
+  .close {
+    font-size: 24px;
+  }
+}
+
+.tel {
+  font-size: 24px;
+  position: relative;
+  padding-left: 26px;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 20px;
+    height: 22px;
+    //background: url('../img/phone-icon.png') 0 0 no-repeat;
+  }
+}
+
+header {
+  margin: 30px 0 0 0;
+  position: relative;
+  min-height: 621px;
+
+  .main-photo {
+    position: absolute;
+    top: -30px;
+    left: -100px;
+    width: 700px;
+    height: 650px;
+    //background: url('../img/main-photo.jpg') 0 0 no-repeat;
+  }
+
+  .logo {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 152px;
+    height: 59px;
+    //background: url('../img/logo.png') 0 0 no-repeat;
+    z-index: 9998;
+  }
+
+  .title {
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  .note {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+}
+
+.feedback {
+
+  .youtube {
+    margin: 30px auto;
+  }
+}
+
+
+
+
+
+.request {
+  padding: 50px 0;
+
+  .error {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+  }
+
+}
+
+footer {
+  padding: 30px 0;
+  background: #252525;
+  color: @body-bg;
+
+  .legal {
+    font-size: 11px;
+    margin-top: 20px;
+    color: darken(@body-bg, 50%);
+  }
+}
+
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  header .main-photo {
+      left: -150px;
+  }
+
+
+}
+
+@media (max-width: @screen-xs-max) {
+  header {
+    min-height: 550px;
+
+    .logo {
+      position: relative;
+    }
+
+    .main-photo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: @screen-phone) {
+
+
+  header {
+    min-height: 600px;
+
+    .title {
+      font-size: 50px;
+    }
+
+    .note {
+      font-size: 32px;
+    }
+
+  }
+
+  .request {
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+
+
+}
+
+
+
+
