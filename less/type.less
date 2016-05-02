@@ -11,10 +11,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: @headings-font-family;
   font-weight: @headings-font-weight;
   line-height: @headings-line-height;
-  color: @headings-color;
-  background: @headings-bg;
   text-transform: uppercase;
-  padding: 5px 10px;
   display: inline-block;
 
   small,
@@ -47,6 +44,21 @@ h6, .h6 {
   .small {
     font-size: 75%;
   }
+}
+
+h1, .h1,
+h2, .h2 {
+  color: @headings-color-inv;
+  background: @headings-bg-inv;
+  padding: 5px 10px;
+}
+
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: @headings-color;
+  background: @headings-bg;
 }
 
 h1, .h1 { font-size: @font-size-h1; }
