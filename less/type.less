@@ -54,7 +54,25 @@ h2, .h2 {
     color: @headings-color-inv;
     background: @headings-bg-inv;
   }
+}
 
+
+h1, .h1 {
+  span {
+    padding: 10px 16px;
+  }
+
+  small {
+    padding: 16px 16px;
+  }
+
+  br + small,
+  br + span {
+    margin-top: 12px;
+  }
+}
+
+h2, .h2 {
   span {
     padding: 5px 10px;
   }
@@ -68,6 +86,7 @@ h2, .h2 {
     margin-top: 6px;
   }
 }
+
 
 h3, .h3,
 h4, .h4,

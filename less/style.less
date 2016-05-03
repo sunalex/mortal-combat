@@ -32,7 +32,7 @@
 }
 
 header {
-  margin: 30px 0 0 0;
+  background: #eee;
 
   .logo {
     position: absolute;
@@ -46,6 +46,7 @@ header {
 
   .title {
     font-size: 80px;
+
     font-weight: 600;
     text-transform: uppercase;
     line-height: 1;
@@ -61,7 +62,17 @@ header {
 }
 
 .intro {
-  background: #000;
+  .agenda {
+    font-size: @font-size-h3;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @headings-color-inv;
+    background: @headings-bg-inv;
+    padding: 12px 10px;
+  }
+
+  padding: 30px 0;
+
 }
 
 .features {
@@ -78,7 +89,7 @@ header {
   background: #eee;
   position: relative;
   overflow: hidden;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 
   .k-line {
     position: absolute;
@@ -88,11 +99,13 @@ header {
     border-bottom: 250px solid #fff;
     border-left: 100vw solid transparent;
     bottom: 0;
+    z-index: 9999;
   }
 
   .title {
     text-transform: uppercase;
-    font-size: @font-size-h1;
+    font-size: @font-size-h2 * 1.5;
+    font-weight: bold;
   }
 
   .k-bottom {
@@ -104,10 +117,6 @@ header {
     background: url('../img/k-bottom.jpg') 0 0 no-repeat;
   }
 
-  .title {
-    font-size: @font-size-h1 * 1.2;
-    font-weight: bold;
-  }
   .personal {
     color: #fff;
     background: #252525;
@@ -119,10 +128,13 @@ header {
 }
 
 .request {
-  padding: 50px 0;
+  position: relative;
+  top: -50px;
+  padding-bottom: 50px;
+  z-index: 9999;
 
   .error {
-    color: #fff;
+    color: red;
     font-size: 18px;
     font-weight: normal;
     margin: 0 0 10px 0;
