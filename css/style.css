@@ -1116,7 +1116,7 @@ img {
   height: auto;
 }
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 20px;
 }
 .img-thumbnail {
   padding: 4px;
@@ -1213,7 +1213,7 @@ h1,
 h2,
 .h2 {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 h1 small,
 .h1 small,
@@ -1293,6 +1293,19 @@ h2 br + small,
 h2 br + span,
 .h2 br + span {
   margin-top: 6px;
+}
+h1.normal span,
+.h1.normal span,
+h2.normal span,
+.h2.normal span,
+h1.normal small,
+.h1.normal small,
+h2.normal small,
+.h2.normal small {
+  color: #000000;
+  background: inherit;
+  padding-left: 0;
+  padding-right: 0;
 }
 h3,
 .h3,
@@ -2792,7 +2805,7 @@ select[multiple].input-sm {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 select.input-lg {
   height: 65px;
@@ -2807,7 +2820,7 @@ select[multiple].input-lg {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 .form-group-lg select.form-control {
   height: 65px;
@@ -3479,7 +3492,7 @@ fieldset[disabled] .btn-link:focus {
   padding: 25px 40px;
   font-size: 30px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -3879,7 +3892,7 @@ tbody.collapse.in {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
@@ -3953,7 +3966,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-addon.input-lg {
   padding: 10px 16px;
   font-size: 18px;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
@@ -4816,13 +4829,13 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .pagination-sm > li > a,
 .pagination-sm > li > span {
@@ -5012,7 +5025,7 @@ a.badge:focus {
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
-  border-radius: 6px;
+  border-radius: 20px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -5859,7 +5872,7 @@ button.list-group-item-danger.active:focus {
 }
 .well-lg {
   padding: 24px;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 .well-sm {
   padding: 9px;
@@ -5935,7 +5948,7 @@ button.close {
   background-color: #ffffff;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 20px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
@@ -6155,7 +6168,7 @@ button.close {
   background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 20px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -6177,7 +6190,7 @@ button.close {
   font-size: 14px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
-  border-radius: 5px 5px 0 0;
+  border-radius: 19px 19px 0 0;
 }
 .popover-content {
   padding: 9px 14px;
@@ -6829,7 +6842,7 @@ header .note {
   margin-top: 40px;
 }
 .intro {
-  padding: 30px 0;
+  padding-bottom: 50px;
 }
 .intro .agenda {
   font-size: 19px;
@@ -6841,9 +6854,10 @@ header .note {
 }
 .features {
   background: #eee;
+  padding-bottom: 30px;
 }
-.feedback .youtube {
-  margin: 30px auto;
+.feedback {
+  padding-bottom: 30px;
 }
 .about {
   background: #eee;
