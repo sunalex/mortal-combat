@@ -1178,7 +1178,6 @@ h6,
   font-weight: 600;
   line-height: 1.1;
   text-transform: uppercase;
-  display: inline-block;
 }
 h1 small,
 h2 small,
@@ -1212,41 +1211,41 @@ h6 .small,
 h1,
 .h1,
 h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+.h2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 h1 small,
 .h1 small,
 h2 small,
 .h2 small,
-h3 small,
-.h3 small,
 h1 .small,
 .h1 .small,
 h2 .small,
-.h2 .small,
-h3 .small,
-.h3 .small {
-  font-size: 65%;
+.h2 .small {
+  font-size: 55%;
 }
+h3,
+.h3,
 h4,
 .h4,
 h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
+h3 small,
+.h3 small,
 h4 small,
 .h4 small,
 h5 small,
 .h5 small,
 h6 small,
 .h6 small,
+h3 .small,
+.h3 .small,
 h4 .small,
 .h4 .small,
 h5 .small,
@@ -1255,13 +1254,39 @@ h6 .small,
 .h6 .small {
   font-size: 75%;
 }
-h1,
-.h1,
-h2,
-.h2 {
+h1 span,
+.h1 span,
+h2 span,
+.h2 span,
+h1 small,
+.h1 small,
+h2 small,
+.h2 small {
+  display: inline-block;
   color: #ffffff;
   background: #000000;
+}
+h1 span,
+.h1 span,
+h2 span,
+.h2 span {
   padding: 5px 10px;
+}
+h1 small,
+.h1 small,
+h2 small,
+.h2 small {
+  padding: 12px 10px;
+}
+h1 br + small,
+.h1 br + small,
+h2 br + small,
+.h2 br + small,
+h1 br + span,
+.h1 br + span,
+h2 br + span,
+.h2 br + span {
+  margin-top: 6px;
 }
 h3,
 .h3,
@@ -1284,7 +1309,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 19px;
 }
 h4,
 .h4 {
@@ -1299,7 +1324,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0 16.666666666666668px;
 }
 .lead {
   margin-bottom: 20px;
@@ -1427,13 +1452,17 @@ a.bg-danger:focus {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 ul ul,
 ol ul,
 ul ol,
 ol ol {
   margin-bottom: 0;
+}
+ul li,
+ol li {
+  margin-bottom: 10px;
 }
 .list-unstyled {
   padding-left: 0;
@@ -2568,10 +2597,8 @@ output {
   color: #555555;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border: 1px solid #555555;
+  border-radius: 0;
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -3025,7 +3052,7 @@ select[multiple].input-lg {
   border: none;
   white-space: nowrap;
   padding: 6px 24px;
-  font-size: 40px;
+  font-size: 19px;
   line-height: 1.428571429;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -3442,8 +3469,8 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 10px 16px;
-  font-size: 18px;
+  padding: 25px 40px;
+  font-size: 30px;
   line-height: 1.3333333;
   border-radius: 6px;
 }
@@ -3908,8 +3935,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555555;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
+  border: 1px solid #555555;
+  border-radius: 0;
 }
 .input-group-addon.input-sm {
   padding: 5px 10px;
@@ -6772,15 +6799,6 @@ button.close {
 }
 header {
   margin: 30px 0 0 0;
-  position: relative;
-  min-height: 621px;
-}
-header .main-photo {
-  position: absolute;
-  top: -30px;
-  left: -100px;
-  width: 700px;
-  height: 650px;
 }
 header .logo {
   position: absolute;
@@ -6814,13 +6832,42 @@ header .note {
 }
 .about {
   background: #eee;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+.about .k-line {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 250px solid #fff;
+  border-left: 100vw solid transparent;
+  bottom: 0;
 }
 .about .title {
+  text-transform: uppercase;
   font-size: 36px;
+}
+.about .k-bottom {
+  position: absolute;
+  top: 0;
+  right: 150px;
+  width: 613px;
+  height: 817px;
+  background: url('../img/k-bottom.jpg') 0 0 no-repeat;
+}
+.about .title {
+  font-size: 43.199999999999996px;
+  font-weight: bold;
 }
 .about .personal {
   color: #fff;
   background: #252525;
+  padding: 12px 20px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 9999;
 }
 .request {
   padding: 50px 0;

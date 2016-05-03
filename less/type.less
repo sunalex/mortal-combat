@@ -12,7 +12,6 @@ h1, h2, h3, h4, h5, h6,
   font-weight: @headings-font-weight;
   line-height: @headings-line-height;
   text-transform: uppercase;
-  display: inline-block;
 
   small,
   .small {
@@ -24,21 +23,22 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1,
-h2, .h2,
-h3, .h3 {
-  margin-top: @line-height-computed;
-  margin-bottom: (@line-height-computed / 2);
+h2, .h2 {
+  margin-top: @line-height-computed * 2;
+  margin-bottom: @line-height-computed * 1.5;
 
   small,
   .small {
-    font-size: 65%;
+    font-size: 55%;
   }
 }
+
+h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: (@line-height-computed / 2);
-  margin-bottom: (@line-height-computed / 2);
+  margin-top: @line-height-computed;
+  margin-bottom: @line-height-computed / 2;
 
   small,
   .small {
@@ -48,9 +48,25 @@ h6, .h6 {
 
 h1, .h1,
 h2, .h2 {
-  color: @headings-color-inv;
-  background: @headings-bg-inv;
-  padding: 5px 10px;
+  span,
+  small {
+    display: inline-block;
+    color: @headings-color-inv;
+    background: @headings-bg-inv;
+  }
+
+  span {
+    padding: 5px 10px;
+  }
+
+  small {
+    padding: 12px 10px;
+  }
+
+  br + small,
+  br + span {
+    margin-top: 6px;
+  }
 }
 
 h3, .h3,
@@ -73,7 +89,7 @@ h6, .h6 { font-size: @font-size-h6; }
 // -------------------------
 
 p {
-  margin: 0 0 (@line-height-computed / 2);
+  margin: 0 0 (@line-height-computed / 1.2);
 }
 
 .lead {
@@ -175,11 +191,16 @@ mark,
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: (@line-height-computed / 2);
+  margin-bottom: @line-height-computed;
   ul,
   ol {
     margin-bottom: 0;
   }
+
+  li {
+    margin-bottom: @line-height-computed / 2;
+  }
+
 }
 
 // List options
