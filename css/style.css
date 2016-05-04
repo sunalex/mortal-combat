@@ -3120,20 +3120,20 @@ fieldset[disabled] a.btn {
 .btn-default:focus,
 .btn-default.focus {
   color: #333333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-default:hover {
   color: #333333;
-  background-color: #e6e6e6;
+  background-color: #ffffff;
   border-color: #adadad;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #333333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  background-color: #ffffff;
+  border-color: #ebebeb;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -3145,8 +3145,8 @@ fieldset[disabled] a.btn {
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
   color: #333333;
-  background-color: #d4d4d4;
-  border-color: #8c8c8c;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3177,20 +3177,20 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:focus,
 .btn-primary.focus {
   color: #ffffff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #5094ce;
+  border-color: #78acd9;
 }
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #286090;
+  background-color: #3f79ac;
   border-color: #204d74;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #5094ce;
+  border-color: #448ccb;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3202,8 +3202,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #ffffff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: #6ca5d6;
+  border-color: #78acd9;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3234,20 +3234,20 @@ fieldset[disabled] .btn-primary.focus {
 .btn-success:focus,
 .btn-success.focus {
   color: #ffffff;
-  background-color: #009a65;
-  border-color: #004e33;
+  background-color: #01ffa8;
+  border-color: #4effc2;
 }
 .btn-success:hover {
   color: #ffffff;
-  background-color: #009a65;
+  background-color: #0ac384;
   border-color: #00905f;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #009a65;
-  border-color: #00905f;
+  background-color: #01ffa8;
+  border-color: #0bffac;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -3259,8 +3259,8 @@ fieldset[disabled] .btn-primary.focus {
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
   color: #ffffff;
-  background-color: #00764e;
-  border-color: #004e33;
+  background-color: #25ffb4;
+  border-color: #4effc2;
 }
 .btn-success:active,
 .btn-success.active,
@@ -3291,20 +3291,20 @@ fieldset[disabled] .btn-success.focus {
 .btn-info:focus,
 .btn-info.focus {
   color: #ffffff;
-  background-color: #31b0d5;
-  border-color: #1b6d85;
+  background-color: #85d0e7;
+  border-color: #b0e1ef;
 }
 .btn-info:hover {
   color: #ffffff;
-  background-color: #31b0d5;
+  background-color: #65bbd4;
   border-color: #269abc;
 }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+  background-color: #85d0e7;
+  border-color: #79cbe4;
 }
 .btn-info:active:hover,
 .btn-info.active:hover,
@@ -3316,8 +3316,8 @@ fieldset[disabled] .btn-success.focus {
 .btn-info.active.focus,
 .open > .dropdown-toggle.btn-info.focus {
   color: #ffffff;
-  background-color: #269abc;
-  border-color: #1b6d85;
+  background-color: #a3dced;
+  border-color: #b0e1ef;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3348,20 +3348,20 @@ fieldset[disabled] .btn-info.focus {
 .btn-warning:focus,
 .btn-warning.focus {
   color: #000000;
-  background-color: #ccc200;
-  border-color: #807900;
+  background-color: #fff533;
+  border-color: #fff980;
 }
 .btn-warning:hover {
   color: #000000;
-  background-color: #ccc200;
+  background-color: #f2e70d;
   border-color: #c2b800;
 }
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
   color: #000000;
-  background-color: #ccc200;
-  border-color: #c2b800;
+  background-color: #fff533;
+  border-color: #fff53d;
 }
 .btn-warning:active:hover,
 .btn-warning.active:hover,
@@ -3373,8 +3373,8 @@ fieldset[disabled] .btn-info.focus {
 .btn-warning.active.focus,
 .open > .dropdown-toggle.btn-warning.focus {
   color: #000000;
-  background-color: #a8a000;
-  border-color: #807900;
+  background-color: #fff657;
+  border-color: #fff980;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -3405,20 +3405,20 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger:focus,
 .btn-danger.focus {
   color: #ffffff;
-  background-color: #c9302c;
-  border-color: #761c19;
+  background-color: #e27c79;
+  border-color: #eba5a3;
 }
 .btn-danger:hover {
   color: #ffffff;
-  background-color: #c9302c;
+  background-color: #ce5d5a;
   border-color: #ac2925;
 }
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #ffffff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #e27c79;
+  border-color: #df706c;
 }
 .btn-danger:active:hover,
 .btn-danger.active:hover,
@@ -3430,8 +3430,8 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger.active.focus,
 .open > .dropdown-toggle.btn-danger.focus {
   color: #ffffff;
-  background-color: #ac2925;
-  border-color: #761c19;
+  background-color: #e89996;
+  border-color: #eba5a3;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -6803,20 +6803,22 @@ button.close {
 .alert .close {
   font-size: 24px;
 }
-.tel {
+/*.tel {
   font-size: 24px;
   position: relative;
   padding-left: 26px;
-}
-.tel:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 5px;
-  width: 20px;
-  height: 22px;
-}
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 20px;
+    height: 22px;
+    //background: url('../img/phone-icon.png') 0 0 no-repeat;
+  }
+}*/
 header {
   background: #eee;
   padding: 20px 0;
