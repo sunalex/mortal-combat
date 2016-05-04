@@ -122,7 +122,8 @@ h6, .h6 { font-size: @font-size-h6; }
 // -------------------------
 
 p {
-  margin: 0 0 (@line-height-computed / 1.2);
+  margin: 0 0 @line-height-computed * 1.5 0;
+  line-height: @line-height-small;
 }
 
 .lead {

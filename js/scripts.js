@@ -41,7 +41,7 @@ $(document).ready(function () {
                         $('.alert').show();
 
                         $(function () {
-                            $(".request").animate({ scrollTop: 0 }, "slow");
+                            $(".request").animate({scrollTop: 0}, "slow");
                             return false;
                         });
 
@@ -52,12 +52,11 @@ $(document).ready(function () {
     });
 
 
-        $('.to-bottom').click(function(){
+    $('.to-bottom').click(function () {
 
-            $('html, body').animate({
-                scrollTop: $(".request").offset().top
-            }, 300);
+        $('html, body').animate({
+            scrollTop: $(".request").offset().top
+        }, 300);
 
-        });
-
+    });
 });

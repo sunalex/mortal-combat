@@ -1343,7 +1343,8 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 16.666666666666668px;
+  margin: 0 0 30px 0;
+  line-height: 1.5;
 }
 .lead {
   margin-bottom: 20px;
@@ -6819,6 +6820,36 @@ button.close {
     //background: url('../img/phone-icon.png') 0 0 no-repeat;
   }
 }*/
+.custom-bullets-yellow {
+  list-style: none;
+  padding-left: 50px;
+}
+.custom-bullets-yellow li {
+  position: relative;
+}
+.custom-bullets-yellow li:before {
+  content: "✩";
+  position: absolute;
+  top: -8px;
+  margin-left: -36px;
+  font-size: 150%;
+  color: #fff200;
+}
+.custom-bullets-red {
+  list-style: none;
+  padding-left: 50px;
+}
+.custom-bullets-red li {
+  position: relative;
+}
+.custom-bullets-red li:before {
+  content: "✩";
+  position: absolute;
+  top: -8px;
+  margin-left: -36px;
+  font-size: 150%;
+  color: #d9534f;
+}
 header {
   background: #eee;
   padding: 20px 0;
@@ -6852,6 +6883,19 @@ header .btn {
   color: #ffffff;
   background: #000000;
   padding: 12px 10px;
+  list-style: none;
+  padding-left: 50px;
+}
+.intro .agenda li {
+  position: relative;
+}
+.intro .agenda li:before {
+  content: "✩";
+  position: absolute;
+  top: -8px;
+  margin-left: -36px;
+  font-size: 150%;
+  color: #fff200;
 }
 .intro .k-top {
   position: absolute;
@@ -6864,10 +6908,28 @@ header .btn {
 .features {
   background: #eee;
   padding-bottom: 30px;
+  position: relative;
+}
+.features .who {
+  list-style: none;
+  padding-left: 50px;
+}
+.features .who li {
+  position: relative;
+}
+.features .who li:before {
+  content: "✩";
+  position: absolute;
+  top: -8px;
+  margin-left: -36px;
+  font-size: 150%;
+  color: #d9534f;
 }
 .features .results {
   width: 456px;
   height: 269px;
+  position: absolute;
+  top: 70px;
   background: url('../img/results.svg') 0 0 no-repeat;
 }
 .feedback {
@@ -6915,6 +6977,9 @@ header .btn {
   top: -50px;
   padding-bottom: 50px;
   z-index: 9999;
+}
+.request .calendar {
+  margin-top: 30px;
 }
 .request .error {
   color: red;
