@@ -33,8 +33,15 @@
 
 header {
   background: #eee;
+  padding: 30px 0;
 
   .logo {
+    width: 175px;
+    height: 54px;
+    background: url('../img/logo.svg') 0 0 no-repeat;
+  }
+/*  .logo {
+
     position: absolute;
     top: -10px;
     left: 0;
@@ -42,26 +49,14 @@ header {
     height: 59px;
     //background: url('../img/logo.png') 0 0 no-repeat;
     z-index: 9998;
-  }
+  }*/
 
-  .title {
-    font-size: 80px;
-
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 30px;
-  }
-
-  .note {
-    font-size: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 40px;
-  }
 }
 
 .intro {
+  position: relative;
+  overflow: hidden;
+
   .agenda {
     font-size: @font-size-h3;
     font-weight: bold;
@@ -71,6 +66,15 @@ header {
     padding: 12px 10px;
   }
 
+  .k-top {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    width: 613px;
+    height: 817px;
+    background: url('../img/k-top.jpg') 0 0 no-repeat;
+  }
+
   padding-bottom: 50px;
 
 }
@@ -78,6 +82,13 @@ header {
 .features {
   background: #eee;
   padding-bottom: 30px;
+
+  .results {
+    width: 456px;
+    height: 269px;
+    background: url('../img/results.svg') 0 0 no-repeat;
+  }
+
 }
 
 .feedback {
