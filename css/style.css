@@ -7054,14 +7054,49 @@ button.close {
   font-size: 150%;
   color: #d9534f;
 }
-header {
-  background: #eee;
-  padding: 20px 0;
+/* Images */
+.k-top {
+  position: absolute;
+  top: 0;
+  right: 150px;
+  width: 613px;
+  height: 817px;
+  background: url('../img/k-top.jpg') 0 0 no-repeat;
 }
-header .logo {
+.k-bottom {
+  position: absolute;
+  top: 0;
+  right: 120px;
+  width: 613px;
+  height: 817px;
+  background: url('../img/k-bottom.jpg') 0 0 no-repeat;
+}
+.k-line {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 250px solid #fff;
+  border-left: 100vw solid transparent;
+  bottom: 0;
+  z-index: 9999;
+}
+.logo {
   width: 175px;
   height: 54px;
   background: url('../img/logo.svg') 0 0 no-repeat;
+}
+.results {
+  width: 456px;
+  height: 269px;
+  position: absolute;
+  top: 70px;
+  background: url('../img/results.svg') 0 0 no-repeat;
+}
+/* Specific styles */
+header {
+  background: #eee;
+  padding: 20px 0;
 }
 header .tel {
   margin-top: 10px;
@@ -7102,14 +7137,6 @@ header .btn {
   font-size: 150%;
   color: #00cd87;
 }
-.intro .k-top {
-  position: absolute;
-  top: 0;
-  right: 150px;
-  width: 613px;
-  height: 817px;
-  background: url('../img/k-top.jpg') 0 0 no-repeat;
-}
 .features {
   background: #eee;
   padding-bottom: 30px;
@@ -7130,13 +7157,6 @@ header .btn {
   font-size: 150%;
   color: #d9534f;
 }
-.features .results {
-  width: 456px;
-  height: 269px;
-  position: absolute;
-  top: 70px;
-  background: url('../img/results.svg') 0 0 no-repeat;
-}
 .feedback {
   padding-bottom: 30px;
 }
@@ -7146,28 +7166,10 @@ header .btn {
   overflow: hidden;
   padding-bottom: 150px;
 }
-.about .k-line {
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-bottom: 250px solid #fff;
-  border-left: 100vw solid transparent;
-  bottom: 0;
-  z-index: 9999;
-}
 .about .title {
   text-transform: uppercase;
   font-size: 45px;
   font-weight: bold;
-}
-.about .k-bottom {
-  position: absolute;
-  top: 0;
-  right: 120px;
-  width: 613px;
-  height: 817px;
-  background: url('../img/k-bottom.jpg') 0 0 no-repeat;
 }
 .about .personal {
   color: #fff;
@@ -7198,15 +7200,29 @@ footer {
   text-transform: uppercase;
   color: #999999;
 }
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .k-top {
+    right: -50px;
+  }
+  .k-bottom {
+    right: -100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .k-top {
+    right: -220px;
+  }
+  .k-bottom {
+    right: -200px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  header .main-photo {
-    left: -150px;
+  .results {
+    position: relative;
+    top: -40px;
   }
 }
 @media (max-width: 767px) {
-  header {
-    min-height: 550px;
-  }
   header .logo {
     position: relative;
   }

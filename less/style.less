@@ -44,16 +44,57 @@
   .custom-bullets(@brand-danger;)
 }
 
+/* Images */
+
+.k-top {
+  position: absolute;
+  top: 0;
+  right: 150px;
+  width: 613px;
+  height: 817px;
+  background: url('../img/k-top.jpg') 0 0 no-repeat;
+}
+
+.k-bottom {
+  position: absolute;
+  top: 0;
+  right: 120px;
+  width: 613px;
+  height: 817px;
+  background: url('../img/k-bottom.jpg') 0 0 no-repeat;
+}
+
+.k-line {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 250px solid #fff;
+  border-left: 100vw solid transparent;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.logo {
+  width: 175px;
+  height: 54px;
+  background: url('../img/logo.svg') 0 0 no-repeat;
+}
+
+.results {
+  width: 456px;
+  height: 269px;
+  position: absolute;
+  top: 70px;
+  background: url('../img/results.svg') 0 0 no-repeat;
+}
+
+
+/* Specific styles */
+
 header {
   background: #eee;
   padding: 20px 0;
-
-  .logo {
-    width: 175px;
-    height: 54px;
-    background: url('../img/logo.svg') 0 0 no-repeat;
-  }
-
 
   .tel {
     margin-top: 10px;
@@ -94,15 +135,6 @@ header {
     .custom-bullets-green;
   }
 
-  .k-top {
-    position: absolute;
-    top: 0;
-    right: 150px;
-    width: 613px;
-    height: 817px;
-    background: url('../img/k-top.jpg') 0 0 no-repeat;
-  }
-
   padding-bottom: 50px;
 
 }
@@ -115,15 +147,6 @@ header {
   .who {
     .custom-bullets-red;
   }
-
-  .results {
-    width: 456px;
-    height: 269px;
-    position: absolute;
-    top: 70px;
-    background: url('../img/results.svg') 0 0 no-repeat;
-  }
-
 }
 
 .feedback {
@@ -139,30 +162,10 @@ header {
   overflow: hidden;
   padding-bottom: 150px;
 
-  .k-line {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-bottom: 250px solid #fff;
-    border-left: 100vw solid transparent;
-    bottom: 0;
-    z-index: 9999;
-  }
-
   .title {
     text-transform: uppercase;
     font-size: @font-size-h2 * 1.5;
     font-weight: bold;
-  }
-
-  .k-bottom {
-    position: absolute;
-    top: 0;
-    right: 120px;
-    width: 613px;
-    height: 817px;
-    background: url('../img/k-bottom.jpg') 0 0 no-repeat;
   }
 
   .personal {
@@ -202,17 +205,36 @@ footer {
 }
 
 
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-  header .main-photo {
-      left: -150px;
+@media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
+  .k-top {
+    right: -50px;
   }
 
+  .k-bottom {
+    right: -100px;
+  }
+}
 
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  .k-top {
+    right: -220px;
+  }
+
+  .k-bottom {
+    right: -200px;
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .results {
+    position: relative;
+    top: -40px;
+  }
 }
 
 @media (max-width: @screen-xs-max) {
   header {
-    min-height: 550px;
+    //min-height: 550px;
 
     .logo {
       position: relative;
