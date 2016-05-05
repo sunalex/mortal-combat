@@ -225,51 +225,49 @@ footer {
   }
 }
 
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+@media (max-width: @screen-sm-max) {
   .results {
     position: relative;
     top: -40px;
+  }
+
+  .about {
+    padding-bottom: 80px;
   }
 }
 
 @media (max-width: @screen-xs-max) {
   header {
-    //min-height: 550px;
+    padding-top: 10px;
+  }
 
-    .logo {
-      position: relative;
-    }
+  .logo {
+    margin-bottom: 10px;
+    zoom: 0.8;
+  }
 
-    .main-photo {
-      display: none;
+  .about {
+    padding-bottom: 30px;
+
+    .personal {
+      margin-top: 20px;
     }
   }
+
+  .request {
+    top: 0;
+  }
+
 }
 
-@media (max-width: @screen-phone) {
-
-
-  header {
-    min-height: 600px;
-
-    .title {
-      font-size: 50px;
-    }
-
-    .note {
-      font-size: 32px;
-    }
-
-  }
+/*@media (max-width: @screen-phone) {
 
   .request {
     .form-group {
       margin-bottom: 20px;
     }
   }
-
-
-}
+}*/
 
 
 

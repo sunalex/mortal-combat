@@ -7216,31 +7216,38 @@ footer {
     right: -200px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .results {
     position: relative;
     top: -40px;
   }
+  .about {
+    padding-bottom: 80px;
+  }
 }
 @media (max-width: 767px) {
-  header .logo {
-    position: relative;
-  }
-  header .main-photo {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
   header {
-    min-height: 600px;
+    padding-top: 10px;
   }
-  header .title {
-    font-size: 50px;
+  .logo {
+    margin-bottom: 10px;
+    zoom: 0.8;
   }
-  header .note {
-    font-size: 32px;
+  .about {
+    padding-bottom: 30px;
   }
-  .request .form-group {
-    margin-bottom: 20px;
+  .about .personal {
+    margin-top: 20px;
+  }
+  .request {
+    top: 0;
   }
 }
+/*@media (max-width: @screen-phone) {
+
+  .request {
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+}*/
