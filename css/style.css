@@ -7000,11 +7000,9 @@ button.close {
 .alert {
   position: relative;
   width: 100%;
-  top: -30px;
-  font-size: 24px;
+  font-size: 18px;
   border-top: none;
   z-index: 9999;
-  font-weight: 600;
 }
 .alert .close {
   font-size: 24px;
@@ -7192,11 +7190,12 @@ header .btn {
   color: red;
   font-size: 18px;
   font-weight: normal;
-  margin: 0 0 10px 0;
+  margin: 10px 0 20px 0;
+  text-transform: inherit;
 }
 footer {
   padding: 30px 0;
-  font-size: 19px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #999999;
 }

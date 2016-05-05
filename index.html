@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.validate.js"></script>
@@ -270,7 +270,6 @@
             <div class="col-md-10 col-md-offset-1">
 
 
-                <form role="form" method="post" action="send.php" class="form">
                     <div class="row">
 
                         <div class="col-xs-10 col-sm-6">
@@ -285,16 +284,13 @@
                                 <button type="button" class="close close-alert"><span
                                         aria-hidden="true">&times;</span><span
                                         class="sr-only">Close</span></button>
-                                Спасибо за обращение! Мы свяжемся
-                                <nobr>с вами</nobr>
-                                в ближайшее время.
+                                Спасибо за обращение!
+                                <br/>
+                                Мы свяжемся с вами в ближайшее время.
                             </div>
 
 
-
-
-                            <input type="text" hidden name="subject"
-                                   value="Вопрос по поединкам">
+                            <form role="form" method="post" action="send.php" class="form">
 
                             <div class="form-group">
                                 <label>Меня зовут</label>
@@ -307,14 +303,16 @@
                             </div>
                             <button type="submit" class="btn btn-warning btn-lg" name="submit">Перезвоните мне</button>
 
+                            </form>
+
                         </div>
-                        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                        <div class="col-xs-12 col-sm-5 col-xl-3 col-sm-offset-1">
                             <div class="lead calendar">
-                                Тренинги проходят по вторникам и четвергам в Санкт-Петербурге.
+                                Тренинги проходят по вторникам и четвергам <span class="nobr">в Санкт-Петербурге.</span>
                             </div>
                         </div>
                     </div>
-                </form>
+
             </div>
 
         </div>
@@ -327,7 +325,7 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div>&copy;2002-2016 Консалтинговая компания «ГАЛС»,<span class="nobr">тел: (812) 230-02-32, 960-81-21</span></div>
+                        <div>&copy;2002-2016 Консалтинговая компания «ГАЛС», <span class="nobr">тел: (812) 230-02-32,</span> <span class="nobr">960-81-21</span></div>
                     </div>
                 </div>
 
