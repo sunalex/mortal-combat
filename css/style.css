@@ -6819,6 +6819,21 @@ button.close {
   font-size: 150%;
   color: #fff200;
 }
+.custom-bullets-green {
+  list-style: none;
+  padding-left: 50px;
+}
+.custom-bullets-green li {
+  position: relative;
+}
+.custom-bullets-green li:before {
+  content: "✩";
+  position: absolute;
+  top: -8px;
+  margin-left: -36px;
+  font-size: 150%;
+  color: #00cd87;
+}
 .custom-bullets-red {
   list-style: none;
   padding-left: 50px;
@@ -6864,14 +6879,12 @@ header .btn {
   padding-bottom: 50px;
 }
 .intro .agenda {
-  font-size: 19px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #000000;
-  padding: 12px 10px;
+  font-size: 24px;
   list-style: none;
   padding-left: 50px;
+}
+.intro .agenda li {
+  margin-bottom: 20px;
 }
 .intro .agenda li {
   position: relative;
@@ -6882,7 +6895,7 @@ header .btn {
   top: -8px;
   margin-left: -36px;
   font-size: 150%;
-  color: #fff200;
+  color: #00cd87;
 }
 .intro .k-top {
   position: absolute;

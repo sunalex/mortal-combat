@@ -36,6 +36,10 @@
   .custom-bullets(@btn-warning-bg;)
 }
 
+.custom-bullets-green {
+  .custom-bullets(@btn-success-bg;)
+}
+
 .custom-bullets-red {
   .custom-bullets(@brand-danger;)
 }
@@ -81,14 +85,13 @@ header {
   overflow: hidden;
 
   .agenda {
-    font-size: @font-size-h3;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: @headings-color-inv;
-    background: @headings-bg-inv;
-    padding: 12px 10px;
+    font-size: 24px;
 
-    .custom-bullets-yellow;
+    li {
+      margin-bottom: 20px;
+    }
+
+    .custom-bullets-green;
   }
 
   .k-top {
