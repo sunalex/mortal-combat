@@ -1661,6 +1661,11 @@ pre code {
     width: 1170px;
   }
 }
+@media (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -2304,6 +2309,164 @@ pre code {
     margin-left: 8.333333333333332%;
   }
   .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1600px) {
+  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+    float: left;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+  .col-xl-11 {
+    width: 91.66666666666666%;
+  }
+  .col-xl-10 {
+    width: 83.33333333333334%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-8 {
+    width: 66.66666666666666%;
+  }
+  .col-xl-7 {
+    width: 58.333333333333336%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-5 {
+    width: 41.66666666666667%;
+  }
+  .col-xl-4 {
+    width: 33.33333333333333%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-2 {
+    width: 16.666666666666664%;
+  }
+  .col-xl-1 {
+    width: 8.333333333333332%;
+  }
+  .col-xl-pull-12 {
+    right: 100%;
+  }
+  .col-xl-pull-11 {
+    right: 91.66666666666666%;
+  }
+  .col-xl-pull-10 {
+    right: 83.33333333333334%;
+  }
+  .col-xl-pull-9 {
+    right: 75%;
+  }
+  .col-xl-pull-8 {
+    right: 66.66666666666666%;
+  }
+  .col-xl-pull-7 {
+    right: 58.333333333333336%;
+  }
+  .col-xl-pull-6 {
+    right: 50%;
+  }
+  .col-xl-pull-5 {
+    right: 41.66666666666667%;
+  }
+  .col-xl-pull-4 {
+    right: 33.33333333333333%;
+  }
+  .col-xl-pull-3 {
+    right: 25%;
+  }
+  .col-xl-pull-2 {
+    right: 16.666666666666664%;
+  }
+  .col-xl-pull-1 {
+    right: 8.333333333333332%;
+  }
+  .col-xl-pull-0 {
+    right: auto;
+  }
+  .col-xl-push-12 {
+    left: 100%;
+  }
+  .col-xl-push-11 {
+    left: 91.66666666666666%;
+  }
+  .col-xl-push-10 {
+    left: 83.33333333333334%;
+  }
+  .col-xl-push-9 {
+    left: 75%;
+  }
+  .col-xl-push-8 {
+    left: 66.66666666666666%;
+  }
+  .col-xl-push-7 {
+    left: 58.333333333333336%;
+  }
+  .col-xl-push-6 {
+    left: 50%;
+  }
+  .col-xl-push-5 {
+    left: 41.66666666666667%;
+  }
+  .col-xl-push-4 {
+    left: 33.33333333333333%;
+  }
+  .col-xl-push-3 {
+    left: 25%;
+  }
+  .col-xl-push-2 {
+    left: 16.666666666666664%;
+  }
+  .col-xl-push-1 {
+    left: 8.333333333333332%;
+  }
+  .col-xl-push-0 {
+    left: auto;
+  }
+  .col-xl-offset-12 {
+    margin-left: 100%;
+  }
+  .col-xl-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+  .col-xl-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  .col-xl-offset-9 {
+    margin-left: 75%;
+  }
+  .col-xl-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  .col-xl-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  .col-xl-offset-6 {
+    margin-left: 50%;
+  }
+  .col-xl-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  .col-xl-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+  .col-xl-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  .col-xl-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+  .col-xl-offset-0 {
     margin-left: 0%;
   }
 }
@@ -6582,13 +6745,17 @@ button.close {
 .affix {
   position: fixed;
 }
+.nobr {
+  white-space: nowrap;
+}
 @-ms-viewport {
   width: device-width;
 }
 .visible-xs,
 .visible-sm,
 .visible-md,
-.visible-lg {
+.visible-lg,
+.visible-xl {
   display: none !important;
 }
 .visible-xs-block,
@@ -6602,7 +6769,10 @@ button.close {
 .visible-md-inline-block,
 .visible-lg-block,
 .visible-lg-inline,
-.visible-lg-inline-block {
+.visible-lg-inline-block,
+.visible-xl-block,
+.visible-xl-inline,
+.visible-xl-inline-block {
   display: none !important;
 }
 @media (max-width: 767px) {
@@ -6725,6 +6895,36 @@ button.close {
     display: inline-block !important;
   }
 }
+@media (min-width: 1600px) {
+  .visible-xl {
+    display: block !important;
+  }
+  table.visible-xl {
+    display: table !important;
+  }
+  tr.visible-xl {
+    display: table-row !important;
+  }
+  th.visible-xl,
+  td.visible-xl {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1600px) {
+  .visible-xl-block {
+    display: block !important;
+  }
+}
+@media (min-width: 1600px) {
+  .visible-xl-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 1600px) {
+  .visible-xl-inline-block {
+    display: inline-block !important;
+  }
+}
 @media (max-width: 767px) {
   .hidden-xs {
     display: none !important;
@@ -6742,6 +6942,11 @@ button.close {
 }
 @media (min-width: 1200px) {
   .hidden-lg {
+    display: none !important;
+  }
+}
+@media (min-width: 1600px) {
+  .hidden-xl {
     display: none !important;
   }
 }
@@ -6959,7 +7164,7 @@ header .btn {
 .about .k-bottom {
   position: absolute;
   top: 0;
-  right: 150px;
+  right: 120px;
   width: 613px;
   height: 817px;
   background: url('../img/k-bottom.jpg') 0 0 no-repeat;
