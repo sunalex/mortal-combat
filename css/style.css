@@ -1437,11 +1437,11 @@ a.bg-primary:focus {
   background-color: #286090;
 }
 .bg-success {
-  background-color: #ccf7bb;
+  background-color: #eeffe7;
 }
 a.bg-success:hover,
 a.bg-success:focus {
-  background-color: #aaf28d;
+  background-color: #caffb4;
 }
 .bg-info {
   background-color: #d9edf7;
@@ -2589,14 +2589,14 @@ table th[class*="col-"] {
 .table > thead > tr.success > th,
 .table > tbody > tr.success > th,
 .table > tfoot > tr.success > th {
-  background-color: #ccf7bb;
+  background-color: #eeffe7;
 }
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover,
 .table-hover > tbody > tr.success:hover > td,
 .table-hover > tbody > tr:hover > .success,
 .table-hover > tbody > tr.success:hover > th {
-  background-color: #bbf4a4;
+  background-color: #dcffcd;
 }
 .table > thead > tr > td.info,
 .table > tbody > tr > td.info,
@@ -3058,7 +3058,7 @@ select[multiple].input-lg {
 .has-success .input-group-addon {
   color: #3c763d;
   border-color: #3c763d;
-  background-color: #ccf7bb;
+  background-color: #eeffe7;
 }
 .has-success .form-control-feedback {
   color: #3c763d;
@@ -5269,12 +5269,12 @@ a.thumbnail.active {
   color: inherit;
 }
 .alert-success {
-  background-color: #ccf7bb;
-  border-color: #ccf7bb;
+  background-color: #eeffe7;
+  border-color: #eeffe7;
   color: #3c763d;
 }
 .alert-success hr {
-  border-top-color: #bbf4a4;
+  border-top-color: #dcffcd;
 }
 .alert-success .alert-link {
   color: #2b542c;
@@ -5529,7 +5529,7 @@ button.list-group-item {
 }
 .list-group-item-success {
   color: #3c763d;
-  background-color: #ccf7bb;
+  background-color: #eeffe7;
 }
 a.list-group-item-success,
 button.list-group-item-success {
@@ -5544,7 +5544,7 @@ button.list-group-item-success:hover,
 a.list-group-item-success:focus,
 button.list-group-item-success:focus {
   color: #3c763d;
-  background-color: #bbf4a4;
+  background-color: #dcffcd;
 }
 a.list-group-item-success.active,
 button.list-group-item-success.active,
@@ -5923,22 +5923,22 @@ button.list-group-item-danger.active:focus {
   border-bottom-color: #337ab7;
 }
 .panel-success {
-  border-color: #ccf7bb;
+  border-color: #eeffe7;
 }
 .panel-success > .panel-heading {
   color: #3c763d;
-  background-color: #ccf7bb;
-  border-color: #ccf7bb;
+  background-color: #eeffe7;
+  border-color: #eeffe7;
 }
 .panel-success > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #ccf7bb;
+  border-top-color: #eeffe7;
 }
 .panel-success > .panel-heading .badge {
-  color: #ccf7bb;
+  color: #eeffe7;
   background-color: #3c763d;
 }
 .panel-success > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #ccf7bb;
+  border-bottom-color: #eeffe7;
 }
 .panel-info {
   border-color: #bce8f1;
@@ -7061,24 +7061,6 @@ button.close {
   height: 817px;
   background: url('../img/k-top.jpg') 0 0 no-repeat;
 }
-.k-bottom {
-  position: absolute;
-  top: 0;
-  right: 120px;
-  width: 613px;
-  height: 817px;
-  background: url('../img/k-bottom.jpg') 0 0 no-repeat;
-}
-.k-line {
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-bottom: 250px solid #fff;
-  border-left: 100vw solid transparent;
-  bottom: 0;
-  z-index: 9999;
-}
 .logo {
   width: 175px;
   height: 54px;
@@ -7158,30 +7140,9 @@ header .btn {
 .feedback {
   padding-bottom: 30px;
 }
-.about {
-  background: #eee;
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 150px;
-}
-.about .title {
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: bold;
-}
-.about .personal {
-  color: #fff;
-  background: #252525;
-  padding: 12px 20px;
-  margin-top: 50px;
-  position: relative;
-  z-index: 9999;
-}
 .request {
-  position: relative;
-  top: -50px;
+  background: #eee;
   padding-bottom: 50px;
-  z-index: 9999;
 }
 .request .calendar {
   margin-top: 30px;
@@ -7203,25 +7164,16 @@ footer {
   .k-top {
     right: -50px;
   }
-  .k-bottom {
-    right: -100px;
-  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .k-top {
     right: -220px;
-  }
-  .k-bottom {
-    right: -200px;
   }
 }
 @media (max-width: 991px) {
   .results {
     position: relative;
     top: -40px;
-  }
-  .about {
-    padding-bottom: 80px;
   }
 }
 @media (max-width: 767px) {
@@ -7232,21 +7184,4 @@ footer {
     margin-bottom: 10px;
     zoom: 0.8;
   }
-  .about {
-    padding-bottom: 30px;
-  }
-  .about .personal {
-    margin-top: 20px;
-  }
-  .request {
-    top: 0;
-  }
 }
-/*@media (max-width: @screen-phone) {
-
-  .request {
-    .form-group {
-      margin-bottom: 20px;
-    }
-  }
-}*/
